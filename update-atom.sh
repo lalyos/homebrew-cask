@@ -32,7 +32,7 @@ git commit -m "atom $VERSION" Casks/atom.rb
 
 git fetch origin
 git rebase origin/master
-git push lalyos master --force
+git push lalyos atom --force
 
 #rm ~/Downloads/atom-mac*.zip
 cd -
