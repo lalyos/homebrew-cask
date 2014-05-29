@@ -6,7 +6,7 @@ if [ ! -f $ZIP ]; then
   exit 1
 fi
 
-cd /usr/local/Library/Taps/phinze-cask
+cd /usr/local/Library/Taps/caskroom/homebrew-cask
 rm -rf /tmp/Atom.app
 echo unzip $ZIP into /tmp ...
 unzip -qod /tmp/ $ZIP
