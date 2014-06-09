@@ -1,11 +1,11 @@
 class Docker < Cask
-  url 'http://get.docker.io/builds/Darwin/x86_64/docker-0.12.0'
+  url 'http://get.docker.io/builds/Darwin/x86_64/docker-1.0.0'
   homepage 'https://www.docker.io/'
-  version '0.12.0'
-  sha256 'a38dccb7f544fad4ef2f95243bef7e2c9afbd76de0e4547b61b27698bf9065f3'
-  binary 'docker-0.12.0', :target => '/usr/local/bin/docker'
+  version '1.0.0'
+  sha256 '67c3c9f285584533ac365a56515f606fc91d4dcd0bfa69c2f159eeb5e37ea3b8'
+  binary 'docker-1.0.0', :target => '/usr/local/bin/docker'
   container_type 'naked'
   after_install do
-    system "chmod", "755", "#{destination_path}/docker-0.12.0"
+    system "chmod", "755", "#{destination_path}/docker-1.0.0"
   end
 end
